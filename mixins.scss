@@ -1,0 +1,29 @@
+@mixin background ($bg-color,$bg-height) {
+	background: $bg-color;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: $bg-height;
+	background-size: 100%;
+	position: relative;
+}
+
+@mixin fonts($f-size,$f-color,$letter-spacing){
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: $f-size;
+	color: $f-color;
+	line-height: 1.5em;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin flex-cont($direction){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+}
+// описание стилей для круглых иконок-кнопок
+@mixin circle-icon($width,$height,$main-color){
+	width: $width;
+	height: $height;
+	border-radius: 50%;
+	background: $main-color;
+}
